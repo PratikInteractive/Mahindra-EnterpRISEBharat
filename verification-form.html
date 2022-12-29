@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahindra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <ul class="navigation">
+                <li><a href="#">About Initiative</a></li>
+                <li><a href="#">T&C</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- main section -->
+    <main>
+        <div class="container outer-block">
+            <div class="inner-block">
+                <img src="images/phone-verification.png" alt="success-icon" class="success-img">
+                <h1 class="black-txt text-center">Phone Verification</h1>
+                <div class="form-block box-shadow-none verify-block">
+                    <form action="#">
+                        <div class="input-container">
+                            <label>
+                                <input type="text" placeholder=" " name="" id="">
+                                <span class="label-head">Enter Mobile Number</span>
+                            </label>
+                        </div>   
+                        <div class="input-container">
+                            <label>
+                                <small>Enter OTP</small>
+                                <!-- otp block start -->
+                                <div class="userInput-otp">
+                                    <input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+                                    <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+                                    <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                                    <input type="text" id="fourth" maxlength="1">
+                                </div>
+                                <!-- otp block end -->
+                            </label>
+                        </div>                      
+                        <p class="resend-otp-text text-center">OTP not received? <a href="">Resend</a></p>
+                        <div class="submit-btn">
+                            <input type="submit" value="VERIFY">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+<script src="./js/main.js"></script>
+</html>
+
